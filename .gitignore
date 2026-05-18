@@ -1,0 +1,11 @@
+*.class
+bin/
+build/
+.metadata/
+.settings/
+.classpath
+.project
+*.launch
+*.log
+.DS_Store
+Thumbs.db
