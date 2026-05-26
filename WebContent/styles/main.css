@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-logo span {
+    color: #0056b3;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.nav-actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* Bottoni */
+.btn-outline {
+    padding: 6px 14px;
+    border: 1px solid #aaa;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    padding: 6px 14px;
+    background: #0056b3;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn-lg {
+    padding: 10px 22px;
+    background: #0056b3;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn-ghost {
+    padding: 10px 18px;
+    border: 1px solid #aaa;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+/* Hero */
+.hero {
+    padding: 60px 24px 48px;
+    max-width: 560px;
+}
+
+.hero-tag {
+    display: inline-block;
+    font-size: 13px;
+    color: #0056b3;
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 10px;
+}
+
+/* Promozioni */
+.promo-section {
+    padding: 32px 24px 48px;
+}
+
+.section-label {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    max-width: 640px;
+}
+
+.promo-card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.promo-card.featured {
+    border-color: #0056b3;
+}
+
+.promo-badge {
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.badge-blue {
+    background: #e8f0fe;
+    color: #0056b3;
+}
+
+.badge-amber {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.promo-code {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.promo-card p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.promo-card small {
+    font-size: 11px;
+    color: #999;
+}
+
+/* Catalogo */
+.prodotto {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 16px;
+    margin: 12px 0;
+}
+
+.prodotto h2 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+/* Search bar */
+.searchbar-wrapper {
+    padding: 12px 24px;
+    border-bottom: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+.searchbar-form {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 0;
+}
+
+.searchbar-input {
+    flex: 1;
+    padding: 8px 14px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.searchbar-btn {
+    padding: 8px 18px;
+    background: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Layout principale hero + categorie affiancati */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.hero {
+    padding: 48px 24px;
+    border-right: 1px solid #ddd;
+}
+
+/* Categorie */
+.categorie-section {
+    padding: 24px;
+}
+
+.categorie-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.categoria-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    text-align: center;
+}
+
+.categoria-card:hover {
+    border-color: #0056b3;
+    color: #0056b3;
+}
+
+.categoria-icon {
+    font-size: 24px;
+}
